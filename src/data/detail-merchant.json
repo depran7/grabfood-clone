@@ -32,17 +32,26 @@
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box",
+          "available": true
         },
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-2.jpeg",
-          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box",
+          "available": true
         },
         {
           "id": "1as",
-          "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+          "imgUrl": "/images/dummy/waiki-3.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box",
+          "available": true
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-4.jpeg",
+          "name": "Chicken Pop Black Pepper & Veggie - Rice Box",
+          "available": true
         }
       ]
     },
@@ -51,19 +60,49 @@
       "items": [
         {
           "id": "1as",
-          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "imgUrl": "/images/dummy/aigo-1.jpeg",
           "name": "Chicken Pop Barbeque & Vegie - Rice Box",
-          "description": "Ikan Laut+Nasi dibakar dengan bumbu Bikin Doyan"
+          "description": "Ikan Laut+Nasi dibakar dengan bumbu Bikin Doyan",
+          "available": true
         },
         {
           "id": "1as",
-          "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+          "imgUrl": "/images/dummy/aigo-2.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box",
+          "description": "Nasi Putih + Udang goreng saos telur asin",
+          "available": true
         },
         {
           "id": "1as",
-          "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+          "imgUrl": "/images/dummy/aigo-3.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box",
+          "description": "Nasi goreng seafood yang bikin doyan dengan isian telur, cumi, udang dan masih bisa ditambah dengan toping",
+          "available": true
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/aigo-4.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box",
+          "description": "Ikan Laut+Nasi dibakar dengan bumbu Bikin Doyan",
+          "available": true
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/aigo-5.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box",
+          "available": true
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/aigo-6.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box",
+          "available": true
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/aigo-7.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box",
+          "available": false
         }
       ]
     },
@@ -78,12 +117,14 @@
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box",
+          "available": true
         },
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box",
+          "available": true
         }
       ]
     },
@@ -98,7 +139,8 @@
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box",
+          "available": true
         },
         {
           "id": "1as",
@@ -118,12 +160,14 @@
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box",
+          "available": true
         },
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box",
+          "available": true
         }
       ]
     },
@@ -133,7 +177,8 @@
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box",
+          "available": true
         },
         {
           "id": "1as",
@@ -143,7 +188,8 @@
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box",
+          "available": true
         }
       ]
     },
@@ -158,7 +204,8 @@
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box",
+          "available": true
         },
         {
           "id": "1as",
@@ -173,7 +220,8 @@
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box",
+          "available": true
         },
         {
           "id": "1as",
@@ -183,7 +231,8 @@
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box",
+          "available": true
         }
       ]
     },
@@ -233,12 +282,14 @@
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box",
+          "available": true
         },
         {
           "id": "1as",
           "imgUrl": "/images/dummy/waiki-1.jpeg",
-          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box",
+          "available": true
         },
         {
           "id": "1as",
