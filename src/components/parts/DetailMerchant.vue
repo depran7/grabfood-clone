@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import DetailMerchant from "@/models/DetailMerchant";
+import DetailMerchantPromo from "./DetailMerchantPromo.vue";
 
 import {
   Listbox,
@@ -57,25 +58,19 @@ const selectedDeliveryTime = ref(props?.detailMerchant?.deliveryTime[0]);
   </div>
 
   <!-- promo -->
-  <div id="promo" class="mt-2 flex items-end text-gray-700">
-    <div>
-      <div
-        v-for="(promo, index) in detailMerchant.promotions"
-        :key="index"
-        class="flex gap-2"
-      >
-        <img src="@/assets/images/icons/icon-promo-tag.svg" alt="Promo Tag" />
-        <p>{{ promo.name }}</p>
-      </div>
-    </div>
-    <button class="text-curious-blue font-semibold">See details</button>
-  </div>
+  <DetailMerchantPromo
+    :promotions="detailMerchant.promotions"
+  ></DetailMerchantPromo>
+
+  <!-- order fee -->
   <div class="text-gray-700">
-    <div class="flex gap-2">
+    <div
+      class="flex flex-row-reverse justify-end items-center bg-gray-100 rounded p-2 text-sx gap-2 md:justify-start md:flex-row md:text-base md:p-0 md:bg-white"
+    >
       <img
         src="@/assets/images/icons/icon-info.svg"
         alt="Promo Tag"
-        class="h-6"
+        class="h-4 md:h-6"
       />
       <p>{{ detailMerchant.orderFee }}</p>
     </div>
