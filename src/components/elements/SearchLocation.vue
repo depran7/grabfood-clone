@@ -31,7 +31,13 @@ function open() {
       @blur="isClicked = false"
       type="text"
       placeholder="Type your location"
-      class="w-full mx-auto rounded-lg border border-gray-300 gap-2 py-2 group pl-12 focus:outline-none focus:border-primary/80 focus:ring-1 focus:ring-primary/20"
+      class="w-full mx-auto rounded-lg border border-gray-300 gap-2 py-2 group px-12 focus:outline-none focus:border-primary/80 focus:ring-1 focus:ring-primary/20"
     />
+    <button>
+      <img
+        src="@/assets/images/icons/icon-geo-button.svg"
+        class="absolute translate-y-1 top-1 right-2"
+      />
+    </button>
   </div>
 </template>
