@@ -1,0 +1,65 @@
+/*global module*/
+/*eslint no-undef: "error"*/
+
+module.exports = {
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#00B14F",
+          50: "#6AFFAC",
+          100: "#55FFA1",
+          200: "#2CFF8A",
+          300: "#04FF74",
+          400: "#00DA61",
+          500: "#00B14F",
+          600: "#007936",
+          700: "#00411D",
+          800: "#000904",
+          900: "#000000",
+        },
+        "curious-blue": {
+          DEFAULT: "#27A5CF",
+          50: "#BBE5F2",
+          100: "#AADEEF",
+          200: "#88D0E9",
+          300: "#66C3E2",
+          400: "#43B6DC",
+          500: "#27A5CF",
+          600: "#1E7FA0",
+          700: "#155A71",
+          800: "#0C3441",
+          900: "#030E12",
+        },
+        danger: {
+          DEFAULT: "#EE6352",
+          50: "#FEFAF9",
+          100: "#FDE9E7",
+          200: "#F9C7C1",
+          300: "#F5A69C",
+          400: "#F28477",
+          500: "#EE6352",
+          600: "#E9351F",
+          700: "#BD2513",
+          800: "#8A1B0E",
+          900: "#571109",
+        },
+        mystic: {
+          DEFAULT: "#EAEFF2",
+          50: "#FFFFFF",
+          100: "#FFFFFF",
+          200: "#FFFFFF",
+          300: "#FFFFFF",
+          400: "#FFFFFF",
+          500: "#EAEFF2",
+          600: "#C7D5DD",
+          700: "#A5BAC7",
+          800: "#82A0B2",
+          900: "#60859B",
+        },
+      },
+    },
+  },
+  plugins: [],
+};
