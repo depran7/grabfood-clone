@@ -10,7 +10,9 @@ import SearchLocation from "@/components/elements/SearchLocation.vue";
       <Logo class="fill-primary logo"></Logo>
       <div class="hidden lg:flex flex-1">
         <div class="w-1/2">
-          <SearchLocation class="w-5/6"></SearchLocation>
+          <div class="w-5/6 mx-auto">
+            <SearchLocation></SearchLocation>
+          </div>
         </div>
       </div>
       <div class="flex gap-2">

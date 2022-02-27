@@ -2,12 +2,36 @@
 import IconLocation from "@/components/icons/IconLocation.vue";
 
 import GfButton from "@/components/elements/GfButton.vue";
+
+import { ref } from "vue";
+
+const isClicked = ref(false);
+const myinput = ref(null);
+
+function open() {
+  isClicked.value = true;
+  setTimeout(() => {
+    myinput.value.focus();
+  }, 200);
+}
 </script>
 <template>
   <GfButton
-    class="w-full mx-auto rounded-lg !border-1 !border-gray-300 gap-2 py-1"
+    v-show="!isClicked"
+    class="w-full mx-auto rounded-lg !border-gray-300 gap-2 py-1"
+    @click="open"
   >
     <IconLocation />
     <span class="text-gray-400/70">Type your location</span>
   </GfButton>
+  <div v-show="isClicked" class="relative">
+    <IconLocation class="absolute translate-y-1 left-2" />
+    <input
+      ref="myinput"
+      @blur="isClicked = false"
+      type="text"
+      placeholder="Type your location"
+      class="w-full mx-auto rounded-lg border border-gray-300 gap-2 py-2 group pl-12 focus:outline-none focus:border-primary/80 focus:ring-1 focus:ring-primary/20"
+    />
+  </div>
 </template>
