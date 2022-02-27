@@ -63,7 +63,12 @@ breadcrumbs.value.push({ name: detailMerchant.name });
 <template>
   <Header></Header>
   <main>
-    <div class="max-w-7xl mx-auto px-8 mt-12">
+    <img
+      :src="detailMerchant.merchantPhoto"
+      :alt="detailMerchant.name"
+      class="w-full md:hidden"
+    />
+    <div class="max-w-7xl mx-auto px-3 md:px-8 mt-12">
       <Breadcrumb :items="breadcrumbs"></Breadcrumb>
       <DetailMerchant :detailMerchant="detailMerchant"></DetailMerchant>
     </div>

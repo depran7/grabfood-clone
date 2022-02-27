@@ -1,6 +1,7 @@
 {
   "_id": "123asda",
   "isPreffered": true,
+  "merchantPhoto": "/images/dummy/banner-1.png",
   "name": "Do Yan Seafood - Sumbersekar",
   "cuisine": "Seafood,Snack",
   "rating": 4.7,
