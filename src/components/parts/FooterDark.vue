@@ -16,9 +16,9 @@ const countries = ref([
 ]);
 </script>
 <template>
-  <footer class="relative mt-20 py-2 w-full bg-tuna text-white">
+  <footer class="relative mt-20 pt-2 pb-12 lg:pb-4 w-full bg-tuna text-white">
     <div class="max-w-7xl mx-auto px-8 pt-6">
-      <div class="flex flex-col justify-center lg:flex-row lg:justify-between">
+      <div class="flex flex-col items-center lg:flex-row lg:justify-between">
         <div class="text-center lg:text-left">
           <div class="font-semibold">Countries with GrabFood</div>
           <div class="flex mt-4 mb-10">
@@ -33,7 +33,7 @@ const countries = ref([
             </a>
           </div>
         </div>
-        <div class="flex gap-8">
+        <div class="flex gap-8 mb-4">
           <a href=""><IconFacebook class="h-7 fill-white" /></a>
           <a href=""><IconInstagram class="h-7 fill-white" /></a>
           <a href=""><IconTwitter class="h-7 fill-white" /></a>
@@ -43,7 +43,7 @@ const countries = ref([
         class="flex flex-col justify-center lg:flex-row lg:justify-between items-center"
       >
         <div class="text-center lg:text-left">
-          <div class="font-semibold text-gray-400">© Grab 2022</div>
+          <div class="text-white/70">© Grab 2022</div>
           <div class="flex mt-4 mb-10 items-center gap-2 text-md">
             <a href="" class="text-sm hover:underline"> Terms of Service </a>
             <span>•</span>
