@@ -26,14 +26,14 @@ import SearchLocation from "@/components/elements/SearchLocation.vue";
         </GfButton>
       </div>
     </div>
-    <div
-      class="max-w-7xl h-20 mx-auto px-8 flex justify-between items-center lg:hidden"
-    >
-      <div class="w-full">
-        <SearchLocation></SearchLocation>
-      </div>
-    </div>
   </header>
+  <div
+    class="bg-white max-w-7xl h-20 mx-auto px-8 flex justify-between items-center lg:hidden sticky z-20 top-0"
+  >
+    <div class="w-full">
+      <SearchLocation></SearchLocation>
+    </div>
+  </div>
 </template>
 
 <style scoped>

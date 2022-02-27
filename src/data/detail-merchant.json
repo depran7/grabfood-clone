@@ -1,0 +1,248 @@
+{
+  "_id": "123asda",
+  "isPreffered": true,
+  "name": "Do Yan Seafood - Sumbersekar",
+  "cuisine": "Seafood,Snack",
+  "rating": 4.7,
+  "distance": "664.1 km",
+  "isOpen": false,
+  "openingHours": "",
+  "promotions": [
+    {
+      "name": "Rp3.000 off delivery fee with Rp30.000 min. order",
+      "desc": [
+        "Available at selected outlets",
+        "Minimum order of Rp30.000",
+        "Discount capped at Rp3.000",
+        "Valid 2022-02-21 17:30 to 2022-02-28 23:30"
+      ]
+    },
+    {
+      "name": "GAJIANGF45G 45%",
+      "desc": []
+    }
+  ],
+  "orderFee": "Order fee of Rp3.000 applies for this restaurant.",
+  "menus": [
+    {
+      "name": "WAIKI Rice Box",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-2.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    },
+    {
+      "name": "Aigo",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    },
+    {
+      "name": "Chingu",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    },
+    {
+      "name": "Seeramon Ikan",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    },
+    {
+      "name": "Samjang Gami (Extra Pedas)",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    },
+    {
+      "name": "Sea Monster",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    },
+    {
+      "name": "Omo",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    },
+    {
+      "name": "Sarangheyo",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    },
+    {
+      "name": "Chaeso",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    },
+    {
+      "name": "Drink (Ice/Hot)",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    },
+    {
+      "name": "Addon",
+      "items": [
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Barbeque & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Teriyaki & Vegie - Rice Box"
+        },
+        {
+          "id": "1as",
+          "imgUrl": "/images/dummy/waiki-1.jpeg",
+          "name": "Chicken Pop Salted Egg & Vegie - Rice Box"
+        }
+      ]
+    }
+  ]
+}
