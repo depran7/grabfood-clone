@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import Header from "@/components/parts/Header.vue";
 import Breadcrumb from "@/components/elements/Breadcrumb.vue";
+import DetailMerchant from "@/components/parts/DetailMerchant.vue";
+
+// data dummy
+import detailMerchant from "@/data/detail-merchant.json";
 
 import { ref } from "vue";
 
@@ -13,10 +17,9 @@ const breadcrumbs = ref([
     name: "Restaurant",
     url: "/restaurants",
   },
-  {
-    name: "Do Yan Seafood - Sumbersekar",
-  },
 ]);
+
+breadcrumbs.value.push({ name: detailMerchant.name });
 </script>
 
 <template>
@@ -24,6 +27,7 @@ const breadcrumbs = ref([
   <main>
     <div class="max-w-7xl mx-auto px-8 mt-12">
       <Breadcrumb :items="breadcrumbs"></Breadcrumb>
+      <DetailMerchant :detailMerchant="detailMerchant"></DetailMerchant>
     </div>
   </main>
 </template>
