@@ -6,7 +6,7 @@ defineProps<{
 </script>
 <template>
   <!-- tabs -->
-  <div class="sticky lg:pt:0 top-20 bg-white z-10 mt-10">
+  <div class="sticky lg:pt:0 top-20 bg-white z-10">
     <div class="8 bg-white">
       <div>
         <div class="block overflow-hidden">

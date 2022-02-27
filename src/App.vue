@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Header from "@/components/parts/Header.vue";
 import NewFooter from "@/components/parts/NewFooter.vue";
+import FooterDark from "@/components/parts/FooterDark.vue";
 import Breadcrumb from "@/components/elements/Breadcrumb.vue";
 import DetailMerchant from "@/components/parts/DetailMerchant.vue";
 import MenuContent from "@/components/parts/MenuContent.vue";
@@ -39,4 +40,5 @@ breadcrumbs.value.push({ name: detailMerchant.name });
     :frequentlySearch="frequentlySearch"
     :popularCuisines="popularCuisines"
   ></NewFooter>
+  <FooterDark></FooterDark>
 </template>
