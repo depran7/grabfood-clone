@@ -1,6 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@headlessui/vue': ^1.5.0
+  '@heroicons/vue': ^1.0.5
   '@rushstack/eslint-patch': ^1.1.0
   '@types/jsdom': ^16.2.14
   '@types/node': ^16.11.25
@@ -27,6 +29,8 @@ specifiers:
   vue-tsc: ^0.31.4
 
 dependencies:
+  '@headlessui/vue': 1.5.0_vue@3.2.31
+  '@heroicons/vue': 1.0.5_vue@3.2.31
   pinia: 2.0.11_typescript@4.5.5+vue@3.2.31
   vue: 3.2.31
 
@@ -163,6 +167,23 @@ packages:
     dependencies:
       '@hapi/hoek': 9.2.1
     dev: true
+
+  /@headlessui/vue/1.5.0_vue@3.2.31:
+    resolution: {integrity: sha512-jAp6XYpqdEv32xhszaj5ejvjaX5qhu20sCbxu7lplePEfZL+4ffabivJBBTZAiPWczqAXmnZWNWG5DOyqjRa4w==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.31
+    dev: false
+
+  /@heroicons/vue/1.0.5_vue@3.2.31:
+    resolution: {integrity: sha512-idWtp20Fjr7mqnD7EdGDUDi83oWHnx3SwyuQY6GZyF33OApzpBOLxz7xa4t6rPOddGz9tI5RGnndLk+ake7ijQ==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.2.31
+    dev: false
 
   /@humanwhocodes/config-array/0.9.5:
     resolution: {integrity: sha512-ObyMyWxZiCu/yTisA7uzx81s40xR2fD5Cg/2Kq7G02ajkNubJf6BopgDTmDyc3U7sXpNKM8cYOw7s7Tyr+DnCw==}
