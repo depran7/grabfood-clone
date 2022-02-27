@@ -18,7 +18,7 @@ defineProps({
 </script>
 
 <template>
-  <footer class="pb-10 relative top-20 w-full bg-mystic">
+  <footer class="pb-10 relative top-0 w-full bg-mystic">
     <div class="max-w-7xl mx-auto px-8 pt-6">
       <div class="flex justify-between items-center border-b border-gray-300">
         <Logo class="fill-gray-800 logo"></Logo>
