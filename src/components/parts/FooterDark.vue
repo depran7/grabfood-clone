@@ -17,7 +17,7 @@ const countries = ref([
 </script>
 <template>
   <footer class="relative pt-2 pb-12 lg:pb-4 w-full bg-tuna text-white">
-    <div class="max-w-7xl mx-auto px-8 pt-6">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 pt-6">
       <div class="flex flex-col items-center lg:flex-row lg:justify-between">
         <div class="text-center lg:text-left">
           <div class="font-semibold">Countries with GrabFood</div>

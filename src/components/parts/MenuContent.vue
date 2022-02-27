@@ -20,7 +20,7 @@ function selectMenu(item) {
     <div class="8 bg-white">
       <div class="block overflow-hidden">
         <div class="absolute top-0 w-full bg-white shadow-md">
-          <div class="max-w-7xl mx-auto px-8">
+          <div class="max-w-7xl mx-auto px-4 lg:px-8">
             <div class="flex items-center">
               <button class="h-full p-1 prev-btn relative">
                 <ChevronLeftIcon
@@ -65,7 +65,7 @@ function selectMenu(item) {
     <div
       v-for="(category, index) in detailMerchant.menus"
       :key="index"
-      class="max-w-7xl mx-auto pb-10 lg:pt-10 px-8"
+      class="max-w-7xl mx-auto pb-10 lg:pt-10 px-4 lg:px-8"
     >
       <h2
         class="text-xl lg:text-4xl font-semibold mb-2 lg:mb-12 lg:mt-0"

@@ -6,7 +6,9 @@ import SearchLocation from "@/components/elements/SearchLocation.vue";
 
 <template>
   <header class="relative lg:sticky w-full z-20 top-0 bg-white">
-    <div class="max-w-7xl h-20 mx-auto px-8 flex justify-between items-center">
+    <div
+      class="max-w-7xl h-20 mx-auto px-4 lg:px-8 flex justify-between items-center"
+    >
       <Logo class="fill-primary logo"></Logo>
       <div class="hidden lg:flex flex-1">
         <div class="w-1/2">
@@ -30,7 +32,7 @@ import SearchLocation from "@/components/elements/SearchLocation.vue";
     </div>
   </header>
   <div
-    class="bg-white max-w-7xl h-20 mx-auto px-8 flex justify-between items-center lg:hidden sticky z-20 top-0"
+    class="bg-white max-w-7xl h-20 mx-auto px-4 lg:px-8 flex justify-between items-center lg:hidden sticky z-20 top-0"
   >
     <div class="w-full">
       <SearchLocation></SearchLocation>
