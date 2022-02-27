@@ -2,6 +2,7 @@
 import Header from "@/components/parts/Header.vue";
 import Breadcrumb from "@/components/elements/Breadcrumb.vue";
 import DetailMerchant from "@/components/parts/DetailMerchant.vue";
+import MenuContent from "@/components/parts/MenuContent.vue";
 
 // data dummy
 import detailMerchant from "@/data/detail-merchant.json";
@@ -29,5 +30,6 @@ breadcrumbs.value.push({ name: detailMerchant.name });
       <Breadcrumb :items="breadcrumbs"></Breadcrumb>
       <DetailMerchant :detailMerchant="detailMerchant"></DetailMerchant>
     </div>
+    <MenuContent :detailMerchant="detailMerchant"></MenuContent>
   </main>
 </template>

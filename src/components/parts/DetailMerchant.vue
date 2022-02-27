@@ -1,20 +1,5 @@
 <script setup lang="ts">
-interface Promotion {
-  name: string;
-  desc: string[];
-}
-interface DetailMerchant {
-  _id: string;
-  isPreffered: boolean;
-  name: string;
-  cuisine: string;
-  rating: number;
-  distance: string;
-  isOpen: boolean;
-  openingHours: string;
-  promotions: Promotion[];
-  orderFee: string;
-}
+import DetailMerchant from "@/models/DetailMerchant";
 defineProps<{
   detailMerchant: DetailMerchant;
 }>();
