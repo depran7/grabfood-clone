@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <ul class="flex gap-2">
+  <ul class="flex gap-2 flex-wrap">
     <li
       v-for="(item, index) in items"
       :key="index"
