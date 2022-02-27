@@ -1,7 +1,10 @@
 <script setup>
-import Logo from "@/components/icons/IconLogoMono.vue";
 import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
+
+import Logo from "@/components/icons/IconLogoMono.vue";
+
+import GfDisclosure from "@/components/elements/GfDisclosure.vue";
 
 defineProps({
   frequentlySearch: {
@@ -11,6 +14,18 @@ defineProps({
     },
   },
   popularCuisines: {
+    type: Object,
+    default() {
+      return [];
+    },
+  },
+  aboutGrab: {
+    type: Object,
+    default() {
+      return [];
+    },
+  },
+  supports: {
     type: Object,
     default() {
       return [];
@@ -74,42 +89,10 @@ defineProps({
         </Menu>
       </div>
       <div class="grid lg:grid-cols-4 mt-8 gap-4">
-        <div>
-          <div class="mb-4 font-bold text-gray-600">Frequently Searched</div>
-          <ul class="flex flex-col gap-1 text-sm text-gray-700">
-            <li v-for="(item, index) in frequentlySearch" :key="index">
-              <a :href="item.slug" class="hover:underline">{{ item.title }}</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <div class="mb-4 font-bold text-gray-600">Popular Cuisines</div>
-          <ul class="flex flex-col gap-1 text-sm text-gray-700">
-            <li v-for="(item, index) in popularCuisines" :key="index">
-              <a :href="item.slug" class="hover:underline">{{ item.title }}</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <div class="mb-4 font-bold text-gray-600">About Grab</div>
-          <ul class="flex flex-col gap-1 text-sm text-gray-700">
-            <li><a href="" class="hover:underline">About Grab</a></li>
-            <li><a href="" class="hover:underline">About Grab Food</a></li>
-            <li><a href="" class="hover:underline">Blog</a></li>
-            <li><a href="" class="hover:underline"></a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="mb-4 font-bold text-gray-600">Support</div>
-          <ul class="flex flex-col gap-1 text-sm text-gray-700">
-            <li><a href="" class="hover:underline">Help</a></li>
-            <li><a href="" class="hover:underline">FAQs</a></li>
-            <li>
-              <a href="" class="hover:underline">Be a GrabFood Merchant</a>
-            </li>
-            <li><a href="" class="hover:underline">Drive With Grab</a></li>
-          </ul>
-        </div>
+        <GfDisclosure title="Frequently Search" :items="frequentlySearch" />
+        <GfDisclosure title="Popular Cuisines" :items="popularCuisines" />
+        <GfDisclosure title="About Grab" :items="aboutGrab" />
+        <GfDisclosure title="Support" :items="supports" />
       </div>
     </div>
   </footer>

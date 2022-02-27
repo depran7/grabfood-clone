@@ -23,6 +23,39 @@ const breadcrumbs = ref([
     url: "/restaurants",
   },
 ]);
+const aboutGrab = ref([
+  {
+    title: "About Grab",
+    slug: "/about",
+  },
+  {
+    title: "About GrabFood",
+    slug: "/food",
+  },
+  {
+    title: "Blog",
+    slug: "/blog",
+  },
+]);
+
+const supports = ref([
+  {
+    title: "Help",
+    slug: "/help",
+  },
+  {
+    title: "FAQs",
+    slug: "/faqs",
+  },
+  {
+    title: "Be a GrabFood Merchant",
+    slug: "/grabfood",
+  },
+  {
+    title: "Drive With Grab",
+    slug: "/driver/food",
+  },
+]);
 
 breadcrumbs.value.push({ name: detailMerchant.name });
 </script>
@@ -39,6 +72,8 @@ breadcrumbs.value.push({ name: detailMerchant.name });
   <NewFooter
     :frequentlySearch="frequentlySearch"
     :popularCuisines="popularCuisines"
+    :aboutGrab="aboutGrab"
+    :supports="supports"
   ></NewFooter>
   <FooterDark></FooterDark>
 </template>

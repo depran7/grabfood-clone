@@ -21,7 +21,7 @@ const countries = ref([
       <div class="flex flex-col items-center lg:flex-row lg:justify-between">
         <div class="text-center lg:text-left">
           <div class="font-semibold">Countries with GrabFood</div>
-          <div class="flex mt-4 mb-10">
+          <div class="flex mt-4 mb-10 flex-wrap justify-center">
             <a
               href=""
               v-for="(item, index) in countries"
