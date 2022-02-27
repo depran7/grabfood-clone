@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import Header from "@/components/parts/Header.vue";
+import NewFooter from "@/components/parts/NewFooter.vue";
 import Breadcrumb from "@/components/elements/Breadcrumb.vue";
 import DetailMerchant from "@/components/parts/DetailMerchant.vue";
 import MenuContent from "@/components/parts/MenuContent.vue";
 
 // data dummy
 import detailMerchant from "@/data/detail-merchant.json";
+import frequentlySearch from "@/data/frequently-search.json";
+import popularCuisines from "@/data/popular-cuisines.json";
 
 import { ref } from "vue";
 
@@ -32,4 +35,8 @@ breadcrumbs.value.push({ name: detailMerchant.name });
     </div>
     <MenuContent :detailMerchant="detailMerchant"></MenuContent>
   </main>
+  <NewFooter
+    :frequentlySearch="frequentlySearch"
+    :popularCuisines="popularCuisines"
+  ></NewFooter>
 </template>

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Chinese Food",
+    "slug": "chinese-food"
+  },
+  {
+    "title": "Fast Food",
+    "slug": "fast-food"
+  },
+  {
+    "title": "Indian Food",
+    "slug": "indian-food"
+  },
+  {
+    "title": "Indonesian Food",
+    "slug": "indonesian-food"
+  },
+  {
+    "title": "Italian Food",
+    "slug": "italian-food"
+  },
+  {
+    "title": "Japanese Food",
+    "slug": "japanese-food"
+  },
+  {
+    "title": "Korean Food",
+    "slug": "korean-food"
+  },
+  {
+    "title": "Thai Food",
+    "slug": "thai-food"
+  },
+  {
+    "title": "Vietnamese Food",
+    "slug": "vietnamese-food"
+  }
+]

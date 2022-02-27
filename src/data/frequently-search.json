@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Burger King Menu",
+    "slug": "burger-king-menu"
+  },
+  {
+    "title": "Chatime Menu",
+    "slug": "chatime-menu"
+  },
+  {
+    "title": "Domino's Pizza Menu",
+    "slug": "Domino's-pizza-menu"
+  },
+  {
+    "title": "Hokben Menu",
+    "slug": "hokben-menu"
+  },
+  {
+    "title": "JCO Delivery",
+    "slug": "jco-delivery"
+  },
+  {
+    "title": "KFC Menu",
+    "slug": "kfc-menu"
+  },
+  {
+    "title": "McDonalds Menu",
+    "slug": "mc-donalds-menu"
+  },
+  {
+    "title": "Pizza Hut Delivery",
+    "slug": "pizza-hut-delivery"
+  },
+  {
+    "title": "Richeese Menu",
+    "slug": "richeese-menu"
+  },
+  {
+    "title": "Menu Solaria",
+    "slug": "menu-solaria"
+  },
+  {
+    "title": "Starbucks Menu",
+    "slug": "starbucks-menu"
+  },
+  {
+    "title": "Yoshinoya Menu",
+    "slug": "yoshinoya-menu"
+  }
+]
