@@ -48,8 +48,8 @@ defineProps<{
           />
           <div class="flex flex-col">
             <div class="h-full">
-              <h3 class="text-lg">{{ item.name }}</h3>
-              <p>{{ item.description }}</p>
+              <h3 class="text-lg text-gray-800">{{ item.name }}</h3>
+              <p class="text-gray-400">{{ item.description }}</p>
             </div>
             <div class="text-right">
               <button class="bg-primary rounded text-white w-8 h-8">+</button>
