@@ -16,7 +16,7 @@ import SearchLocation from "@/components/elements/SearchLocation.vue";
         </div>
       </div>
       <div class="flex gap-2">
-        <GfButton>
+        <GfButton class="hidden md:inline-block">
           <img
             src="@/assets/images/icons/icon-cart-default-black.svg"
             alt=""
