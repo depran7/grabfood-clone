@@ -73,17 +73,16 @@ const selectedMenu = ref(props?.detailMerchant?.menus[0]);
         <div
           class="bg-white rounded py-4 lg:px-4 flex gap-4 border-b lg:border-b-0 lg:hover:border box-border lg:hover:border-primary hover:cursor-pointer"
           v-for="(item, index) in category.items"
+          :class="{ 'opacity-50': !item.available }"
           :key="index"
         >
-          <img
-            :src="item.imgUrl"
-            alt="item.name"
-            class="w-32 h-2w-32 rounded-md"
-          />
+          <div class="w-48">
+            <img :src="item.imgUrl" alt="item.name" class="w-full rounded-md" />
+          </div>
           <div class="flex flex-col w-full">
             <div class="h-full">
               <h3 class="text-lg text-gray-800">{{ item.name }}</h3>
-              <p class="text-gray-400">{{ item.description }}</p>
+              <p class="text-gray-400 text-sm">{{ item.description }}</p>
             </div>
             <div class="text-right">
               <button class="rounded w-8 h-8">
