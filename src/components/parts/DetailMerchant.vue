@@ -19,6 +19,7 @@ const selectedDeliveryDate = ref(props?.detailMerchant?.deliveryDate[0]);
 const selectedDeliveryTime = ref(props?.detailMerchant?.deliveryTime[0]);
 </script>
 <template>
+  <!-- preferred merchant label -->
   <div class="flex gap-1 text-primary mt-4">
     <img
       src="@/assets/images/icons/icon-preferred-merchant.svg"
@@ -32,6 +33,7 @@ const selectedDeliveryTime = ref(props?.detailMerchant?.deliveryTime[0]);
   <h1 class="text-4xl font-semibold mt-2">{{ detailMerchant.name }}</h1>
   <h3 class="text-gray-500 mt-2">{{ detailMerchant.cuisine }}</h3>
 
+  <!-- rating & distance -->
   <div class="text-gray-500 flex gap-8 mt-1">
     <div class="flex gap-2">
       <img src="@/assets/images/icons/icon-star.svg" alt="preferred merchant" />
