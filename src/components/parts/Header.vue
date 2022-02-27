@@ -60,10 +60,10 @@ function openModal() {
   </div>
 
   <!-- Cart -->
-  <TransitionRoot appear :show="isOpen" as="template">
+  <TransitionRoot :show="isOpen" as="template">
     <Dialog as="div" @close="closeModal">
-      <div class="fixed inset-0 z-30 overflow-y-auto">
-        <div class="min-h-screen px-4 text-center">
+      <div class="fixed inset-0 z-30 overflow-hidden">
+        <div class="min-h-screen text-right overflow-hidden">
           <TransitionChild
             as="template"
             enter="duration-200 ease-out"
@@ -83,14 +83,14 @@ function openModal() {
           <TransitionChild
             as="template"
             enter="duration-200 ease-out"
-            enter-from="opacity-0 scale-95"
-            enter-to="opacity-100 scale-100"
+            enter-from="opacity-0"
+            enter-to="opacity-100"
             leave="duration-200 ease-in"
-            leave-from="opacity-100 scale-100"
-            leave-to="opacity-0 scale-95"
+            leave-from="opacity-100"
+            leave-to="opacity-0"
           >
             <div
-              class="absolute right-0 inline-block h-full w-full md:max-w-md lg:max-w-lg p-6 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl"
+              class="inline-block h-screen w-full md:max-w-md lg:max-w-lg p-6 overflow-hidden text-left transition-all transform bg-white shadow-xl top-0 right-0"
             >
               <DialogTitle
                 as="h3"
@@ -101,7 +101,7 @@ function openModal() {
                 </button>
               </DialogTitle>
               <div
-                class="flex flex-col justify-center items-center lg:gap-7 h-full -mt-16"
+                class="flex flex-col justify-center items-center lg:gap-7 h-full"
               >
                 <img
                   src="@/assets/images/ilustrations/ilus-basket-empty.svg"
