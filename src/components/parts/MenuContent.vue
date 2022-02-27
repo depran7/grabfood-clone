@@ -9,6 +9,10 @@ const props = defineProps<{
 }>();
 
 const selectedMenu = ref(props?.detailMerchant?.menus[0]);
+
+function selectMenu(item) {
+  selectedMenu.value = item;
+}
 </script>
 <template>
   <!-- tabs -->
@@ -36,6 +40,7 @@ const selectedMenu = ref(props?.detailMerchant?.menus[0]);
                         'border-b-2 border-primary text-primary font-bold':
                           selectedMenu.name === category.name,
                       }"
+                      @click="selectMenu(category)"
                     >
                       {{ category.name }}
                     </button>
@@ -112,8 +117,8 @@ const selectedMenu = ref(props?.detailMerchant?.menus[0]);
   width: 16px;
   height: 100%;
   top: 0;
-  right: 16px;
-  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #fff);
+  right: -16px;
+  background: linear-gradient(270deg, hsla(0, 0%, 100%, 0), #fff);
 }
 .next-btn:before {
   content: "";
