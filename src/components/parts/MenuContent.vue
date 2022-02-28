@@ -9,7 +9,6 @@ const props = defineProps<{
 }>();
 
 const selectedMenu = ref(props?.detailMerchant?.menus[0]);
-const menuContents = ref(props?.detailMerchant?.menus ?? []);
 const refMenuContents = ref(props?.detailMerchant?.menus ?? []);
 onMounted(() => {
   window.addEventListener("scroll", scrollSelectMenu);
@@ -19,7 +18,6 @@ onUnmounted(() => {
 });
 
 function scrollSelectMenu() {
-  console.log(window.scrollY);
   const menuContents = refMenuContents.value;
   menuContents.forEach((menuContent, index) => {
     const menuEL = document.getElementById(`menu-${index}`);
@@ -90,10 +88,9 @@ function checkMenuContents(index) {
   <!-- menus -->
   <div class="relative top-0 lg:bg-gray-100 pt-20 pb-10" id="menus-container">
     <div
-      v-for="(category, index) in menuContents"
+      v-for="(category, index) in detailMerchant.menus"
       :key="index"
       :id="`menu-${index}`"
-      ref="refMenuContents"
       class="max-w-7xl mx-auto pb-10 lg:pt-10 px-4 lg:px-8"
     >
       <h2
@@ -105,7 +102,7 @@ function checkMenuContents(index) {
       <!-- card items category -->
       <div class="grid lg:grid-cols-3 lg:gap-4">
         <div
-          class="bg-white rounded py-4 lg:px-4 flex gap-4 border-b lg:border-b-0 lg:hover:border box-border lg:hover:border-primary hover:cursor-pointer"
+          class="bg-white rounded py-4 lg:px-4 flex gap-4 border-b lg:border-b-0 lg:hover:ring-2 box-border lg:hover:ring-primary hover:cursor-pointer"
           v-for="(item, index) in category.items"
           :class="{ 'opacity-50': !item.available }"
           :key="index"
