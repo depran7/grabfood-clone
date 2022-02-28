@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
 import DetailMerchant from "@/models/DetailMerchant";
 import IconSquarePlus from "@/components/icons/IconSquarePlus.vue";
@@ -9,9 +9,28 @@ const props = defineProps<{
 }>();
 
 const selectedMenu = ref(props?.detailMerchant?.menus[0]);
+const menuContents = ref(props?.detailMerchant?.menus ?? []);
+const refMenuContents = ref(props?.detailMerchant?.menus ?? []);
+onMounted(() => {
+  document.getElementById("menus-container").addEventListener("scroll", () => {
+    scrollSelectMenu(document.getElementById("menus-container"));
+  });
+});
 
-function selectMenu(item) {
+function scrollSelectMenu(menusContainer) {
+  console.log(menusContainer.offset);
+}
+
+function selectMenu(item, index) {
   selectedMenu.value = item;
+  checkMenuContents(index);
+}
+
+function checkMenuContents(index) {
+  window.scrollTo({
+    top: document.getElementById(`menu-${index}`).offsetTop + 360,
+    behavior: "smooth",
+  });
 }
 </script>
 <template>
@@ -40,7 +59,7 @@ function selectMenu(item) {
                         'border-b-2 border-primary text-primary font-bold':
                           selectedMenu.name === category.name,
                       }"
-                      @click="selectMenu(category)"
+                      @click="selectMenu(category, index)"
                     >
                       {{ category.name }}
                     </button>
@@ -61,10 +80,16 @@ function selectMenu(item) {
   </div>
 
   <!-- menus -->
-  <div class="relative top-0 lg:bg-gray-100 pt-20 pb-10">
+  <div
+    class="relative top-0 lg:bg-gray-100 pt-20 pb-10"
+    id="menus-container"
+    @scroll="scrollSelectMenu"
+  >
     <div
-      v-for="(category, index) in detailMerchant.menus"
+      v-for="(category, index) in menuContents"
       :key="index"
+      :id="`menu-${index}`"
+      ref="refMenuContents"
       class="max-w-7xl mx-auto pb-10 lg:pt-10 px-4 lg:px-8"
     >
       <h2

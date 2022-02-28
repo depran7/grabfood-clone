@@ -37,7 +37,6 @@ const aboutGrab = ref([
     slug: "/blog",
   },
 ]);
-
 const supports = ref([
   {
     title: "Help",
