@@ -12,13 +12,21 @@ const selectedMenu = ref(props?.detailMerchant?.menus[0]);
 const menuContents = ref(props?.detailMerchant?.menus ?? []);
 const refMenuContents = ref(props?.detailMerchant?.menus ?? []);
 onMounted(() => {
-  document.getElementById("menus-container").addEventListener("scroll", () => {
-    scrollSelectMenu(document.getElementById("menus-container"));
-  });
+  window.addEventListener("scroll", scrollSelectMenu);
+});
+onUnmounted(() => {
+  window.removeEventListener("scroll", scrollSelectMenu);
 });
 
-function scrollSelectMenu(menusContainer) {
-  console.log(menusContainer.offset);
+function scrollSelectMenu() {
+  console.log(window.scrollY);
+  const menuContents = refMenuContents.value;
+  menuContents.forEach((menuContent, index) => {
+    const menuEL = document.getElementById(`menu-${index}`);
+    if (window.scrollY >= menuEL.offsetTop + 360) {
+      selectedMenu.value = menuContent;
+    }
+  });
 }
 
 function selectMenu(item, index) {
@@ -80,11 +88,7 @@ function checkMenuContents(index) {
   </div>
 
   <!-- menus -->
-  <div
-    class="relative top-0 lg:bg-gray-100 pt-20 pb-10"
-    id="menus-container"
-    @scroll="scrollSelectMenu"
-  >
+  <div class="relative top-0 lg:bg-gray-100 pt-20 pb-10" id="menus-container">
     <div
       v-for="(category, index) in menuContents"
       :key="index"
