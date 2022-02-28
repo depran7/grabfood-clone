@@ -1,6 +1,19 @@
 # grabfood-clone
 
-This template should help get you started developing with Vue 3 in Vite.
+This is Vue 3 + Vite project. It is used for my technical test with a [Grab Food case study](https://food.grab.com/id/en/restaurant/do-yan-seafood-sumbersekar-delivery/6-C2XDGABBT3BYGT). I tried to make it look very similar and responsive on any device
+
+## Demo
+https://depran7-gf-clone.netlify.app/
+
+## CSS Framework
+TAILWIND CSS
+
+## Assets
+From
+- Grab food (icons, images) 
+- Font awesome (icons) 
+- Heroicons (icons) 
+- Custom icon (use figma) 
 
 ## Recommended IDE Setup
 
