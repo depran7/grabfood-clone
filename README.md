@@ -3,7 +3,8 @@
 This is Vue 3 + Vite project. It is used for my technical test with a [Grab Food case study](https://food.grab.com/id/en/restaurant/do-yan-seafood-sumbersekar-delivery/6-C2XDGABBT3BYGT). I tried to make it look very similar and responsive on any device
 
 ## Demo (online)
-https://depran7-gf-clone.netlify.app/
+- https://depran7-gf-clone.netlify.app/
+- https://grabfood-clone.vercel.app/
 
 ## Demo (local)
 check `project setup`
